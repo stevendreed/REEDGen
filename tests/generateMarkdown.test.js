@@ -56,7 +56,24 @@ describe(`renderLicenseBadge`, () =>
 ); // end describe
 describe(`renderLicenseLink`, () =>
 {
+    it(`should return an empty string if no license`, () =>
+    {
+        const testData = ``;
+        const returnExpo = ``; // empty string
+        let returnAct = renderLicenseLink(testData);
 
+        expect(returnAct).toEqual(returnExp);
+    } // end funct
+    ); // end it
+    it(`should return a valid link if a valid license is provided`, () =>
+    {
+        const testData = ``;
+        const returnExpo = ``; // link
+        let returnAct = renderLicenseLink(testData);
+
+        expect(returnAct).toEqual(returnExp);
+    } // end funct
+    ); // end it
 } // end funct
 ); // end describe
 describe(`renderLicenseSection`, () =>
