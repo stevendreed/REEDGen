@@ -1,6 +1,10 @@
 const generateMarkdown = require(`../utils/generateMarkdown`);
 
-
+/*
+* license keywords:
+* https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/
+* customizing-your-repository/licensing-a-repository
+*/
 describe(`renderLicenseBadge`, () =>
 {
     it(`should return an empty string if there is no license`, () =>
@@ -21,7 +25,33 @@ describe(`renderLicenseBadge`, () =>
         expect(returnAct).toEqual(returnExp);
     } // end funct
     ); // end it
+    it(`should return a Apache 2.0 license if passed`, () =>
+    {
+        const testData = ``; // TODO: identify what licenses are invalid
+        const returnExp = ``; // expecting an empty string
+        let returnAct = renderLicenseBadge(testData);
 
+        expect(returnAct).toEqual(returnExp);
+    } // end funct
+    ); // end it
+    it(`should return a creative commons license if passed`, () =>
+    {
+        const testData = ``; // TODO: identify what licenses are invalid
+        const returnExp = ``; // expecting an empty string
+        let returnAct = renderLicenseBadge(testData);
+
+        expect(returnAct).toEqual(returnExp);
+    } // end funct
+    ); // end it
+    it(`should return a GNU Lesser General Public License v3.0 license if passed`, () =>
+    {
+        const testData = ``; // TODO: identify what licenses are invalid
+        const returnExp = ``; // expecting an empty string
+        let returnAct = renderLicenseBadge(testData);
+
+        expect(returnAct).toEqual(returnExp);
+    } // end funct
+    ); // end it
 } // end funct
 ); // end describe
 describe(`renderLicenseLink`, () =>
