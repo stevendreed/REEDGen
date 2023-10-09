@@ -18,7 +18,7 @@ describe(`renderLicenseBadge`, () =>
     ); // end it
     it(`should return a MIT license badge if MIT license is passed `, () =>
     {
-        const testData = ``; // TODO: identify how to pass a license into function
+        const testData = `MIT`;
         const returnExp = ``; // TODO: identify what return is generated
         let returnAct = renderLicenseBadge(testData);
 
@@ -27,16 +27,16 @@ describe(`renderLicenseBadge`, () =>
     ); // end it
     it(`should return a Apache 2.0 license if passed`, () =>
     {
-        const testData = ``; // TODO: identify what licenses are invalid
+        const testData = `Apache-2.0`;
         const returnExp = ``; // expecting an empty string
         let returnAct = renderLicenseBadge(testData);
 
         expect(returnAct).toEqual(returnExp);
     } // end funct
     ); // end it
-    it(`should return a creative commons license if passed`, () =>
+    it(`should return a Creative Commons license if passed`, () =>
     {
-        const testData = ``; // TODO: identify what licenses are invalid
+        const testData = `CC`;
         const returnExp = ``; // expecting an empty string
         let returnAct = renderLicenseBadge(testData);
 
@@ -45,7 +45,7 @@ describe(`renderLicenseBadge`, () =>
     ); // end it
     it(`should return a GNU Lesser General Public License v3.0 license if passed`, () =>
     {
-        const testData = ``; // TODO: identify what licenses are invalid
+        const testData = `LGPL-3.0`;
         const returnExp = ``; // expecting an empty string
         let returnAct = renderLicenseBadge(testData);
 
