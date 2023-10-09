@@ -59,7 +59,7 @@ describe(`renderLicenseLink`, () =>
     it(`should return an empty string if no license`, () =>
     {
         const testData = ``;
-        const returnExpo = ``; // empty string
+        const returnExp = ``; // empty string
         let returnAct = renderLicenseLink(testData);
 
         expect(returnAct).toEqual(returnExp);
@@ -68,7 +68,7 @@ describe(`renderLicenseLink`, () =>
     it(`should return a valid link if a valid license is provided`, () =>
     {
         const testData = ``;
-        const returnExpo = ``; // link
+        const returnExp = ``; // link
         let returnAct = renderLicenseLink(testData);
 
         expect(returnAct).toEqual(returnExp);
@@ -78,7 +78,25 @@ describe(`renderLicenseLink`, () =>
 ); // end describe
 describe(`renderLicenseSection`, () =>
 {
+    it(`should return an empty string if no license section`, () =>
+    {
+        const testData = ``;
+        const returnExp = ``; // empty string
+        let returnAct = renderLicenseSection(testData);
 
+        expect(returnAct).toEqual(returnExp);
+    } // end funct
+    ); // end it
+    it(`should return the license section`, () =>
+    {
+        const testData = ``;
+        const returnExp = ``; // TODO
+        let returnAct = renderLicenseSection(testData);
+
+        expect(returnAct).toEqual(returnExp);
+    } // end funct
+    ); // end it
+    
 } // end funct
 ); // end describe
 describe(`generateMarkdown`, () =>
