@@ -1,3 +1,3 @@
-const generateMarkdown = require(`./generateMarkdown.js`);
+const generateMarkdown = require(`../utils/generateMarkdown.js`);
 
 
