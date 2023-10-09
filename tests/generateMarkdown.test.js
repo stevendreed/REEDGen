@@ -118,7 +118,8 @@ describe(`generateMarkdown`, () =>
             description: `Lorem ipsum cato degagrede`,
             installation: `to install, please npm then commit the i`,
             usage: `to use, use`,
-            tests: `halp please i honger`,
+            contribution: `halp please i honger`,
+            tests: `mak tests not war`,
             author: `testauthorgithub`,
             license: `sample notice here`,
             email: `testauthorgithub.gmail.test.com`
@@ -138,28 +139,38 @@ describe(`generateMarkdown`, () =>
 
 [Testing](###Testing)
 
+[License](###License)
+
 [Questions?](###Questions?)
 
 ### Description
-
+>
 > Lorem ipsum cato degagrede
 ---
 ### Installation Instructions
-
-> to install, please npm then the i
+>
+> to install, please npm then commit the i
 ---
 ### Usage
-
+>
 > to use, use
 ---
 ### Contribution Guidelines
-
+>
 > halp please i honger
 ---
 ### Testing
+>
+> mak tests not war
+---
+### License
+>
+> sample notice here
 ---
 ### Questions?
+>
 > [testauthorgithub](https://github.com/testauthorgithub)
+> [testauthorgithub.gmail.test.com](mailto:testauthorgithub.gmail.test.com)
 ---
 REEDGen by Steven Reed \`@github.com/stevendreed\`
 `;
