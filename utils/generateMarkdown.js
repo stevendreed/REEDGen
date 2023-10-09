@@ -26,6 +26,8 @@ function generateMarkdown(data) {
 
 [Testing](###Testing)
 
+[License](###License)
+
 [Questions?](###Questions?)
 
 ### Description
@@ -47,9 +49,12 @@ function generateMarkdown(data) {
 ### Testing
 > ${data.tests}
 ---
+### License
+> ${data.license}
+---
 ### Questions?
 > [${data.author}](https://github.com/${data.author})
-[${data.email}](mailto:${data.email})
+> [${data.email}](mailto:${data.email})
 ---
 REEDGen by Steven Reed \`@github.com/stevendreed\`
 `;

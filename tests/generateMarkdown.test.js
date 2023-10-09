@@ -119,7 +119,7 @@ describe(`generateMarkdown`, () =>
             installation: `to install, please npm then commit the i`,
             usage: `to use, use`,
             contribution: `halp please i honger`,
-            tests: `mak tests\nnot\nwar`,
+            tests: `mak tests not war`,
             author: `testauthorgithub`,
             license: `sample notice here`,
             email: `testauthorgithub.gmail.test.com`
@@ -147,7 +147,7 @@ describe(`generateMarkdown`, () =>
 ---
 ### Installation Instructions
 
-> to install, please npm then the i
+> to install, please npm then commit the i
 ---
 ### Usage
 
@@ -159,9 +159,7 @@ describe(`generateMarkdown`, () =>
 ---
 ### Testing
 
-> mak tests
-not
-war
+> mak tests not war
 ---
 ### Questions?
 > [testauthorgithub](https://github.com/testauthorgithub)
