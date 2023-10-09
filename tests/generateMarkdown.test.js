@@ -12,6 +12,15 @@ describe(`renderLicenseBadge`, () =>
         expect(returnAct).toEqual(returnExp);
     } // end funct
     ); // end it
+    it(`should return a MIT license badge if MIT license is passed `, () =>
+    {
+        const testData = ``; // TODO: identify how to pass a license into function
+        const returnExp = ``; // TODO: identify what return is generated
+        let returnAct = renderLicenseBadge(testData);
+
+        expect(returnAct).toEqual(returnExp);
+    } // end funct
+    ); // end it
 
 } // end funct
 ); // end describe
