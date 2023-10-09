@@ -139,29 +139,36 @@ describe(`generateMarkdown`, () =>
 
 [Testing](###Testing)
 
+[License](###License)
+
 [Questions?](###Questions?)
 
 ### Description
-
+>
 > Lorem ipsum cato degagrede
 ---
 ### Installation Instructions
-
+>
 > to install, please npm then commit the i
 ---
 ### Usage
-
+>
 > to use, use
 ---
 ### Contribution Guidelines
-
+>
 > halp please i honger
 ---
 ### Testing
-
+>
 > mak tests not war
 ---
+### License
+>
+> sample notice here
+---
 ### Questions?
+>
 > [testauthorgithub](https://github.com/testauthorgithub)
 > [testauthorgithub.gmail.test.com](mailto:testauthorgithub.gmail.test.com)
 ---
