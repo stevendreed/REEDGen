@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require(`inquirer`);
 const genMD = require(`./utils/generateMarkdown`);
+const generateMarkdown = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
 // object containing all basic git license types
 const licenseChoices =
@@ -65,14 +66,9 @@ function init()
     .prompt(questions)
     .then(answers => 
     {
-        // console.log(...answers.value);
         console.log({...answers});
-        // for (let i = 0; i < answers.length; ++i)
-        // {
-        //     console.log(answers.value);
-        // } // end for
+        generateMarkdown(answers);
     } // end funct
-
     ) // end then
     .catch(err => 
     {
