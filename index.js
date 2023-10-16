@@ -1,24 +1,15 @@
 // TODO: Include packages needed for this application
 const inquirer = require(`inquirer`);
+const genMD = require(`./utils/generateMarkdown`);
 // TODO: Create an array of questions for user input
-const licenseObj =
+// object containing all basic git license types
+const licenseChoices =
 [
-    {
-        name: `None`,
-        keyw: `N/A`,
-        url: ``,
-    },
-    {
-        name: `Academic Free License v3.0`,
-        keyw: `AFL-3.0`,
-        url: ``,
-    },
-    {
-        name: `Apache license 2.0`,
-        keyw: `Apache-2.0`,
-        url: ``,
-    },
-]
+    `None`,
+    `Academic Free License v3.0`,
+    `Apache license 2.0`,
+];
+// user prompt questions to generate a README file
 const questions =
 [
     {
@@ -50,7 +41,7 @@ const questions =
         name: `license`,
         type: `list`,
         message: `Choose a license you'd like to use for your repository`,
-        choices: licenseObj,
+        choices: licenseChoices,
     },
     {
         name: `author`,
@@ -81,6 +72,7 @@ function init()
         //     console.log(answers.value);
         // } // end for
     } // end funct
+
     ) // end then
     .catch(err => 
     {
