@@ -67,7 +67,12 @@ function init()
     .then(answers => 
     {
         console.log({...answers});
-        generateMarkdown(answers);
+        console.log(generateMarkdown(answers));
+    //     .then(outcome =>
+    //         {
+    //             console.log(outcome);
+    //         } // end =>
+    //         ) // end then
     } // end funct
     ) // end then
     .catch(err => 
