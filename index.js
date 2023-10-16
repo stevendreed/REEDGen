@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require(`inquirer`);
-const genMD = require(`./utils/generateMarkdown`);
+const fs = require(`fs`);
+// const genMD = require(`./utils/generateMarkdown`);
 const generateMarkdown = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
 // object containing all basic git license types
