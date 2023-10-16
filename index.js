@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require(`inquirer`);
-const genMD = require(`./utils/generateMarkdown`);
+const fs = require(`fs`);
+// const genMD = require(`./utils/generateMarkdown`);
 const generateMarkdown = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
 // object containing all basic git license types
@@ -57,7 +58,19 @@ const questions =
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data)
+{
+    fs.writeFile(
+        fileName,
+        data,
+        {encoding: `utf8`},
+        err =>
+        {
+            err ? console.log(err) : console.log(
+                `Success! See ${fileName} for file`);
+        } // end =>
+    ) // end write file
+}
 
 // TODO: Create a function to initialize app
 function init()
@@ -67,12 +80,14 @@ function init()
     .then(answers => 
     {
         console.log({...answers});
-        console.log(generateMarkdown(answers));
+        const mdFile = generateMarkdown(answers)
+        console.log(mdFile);
     //     .then(outcome =>
     //         {
     //             console.log(outcome);
     //         } // end =>
     //         ) // end then
+    writeToFile(`./output/README.md`, mdFile);
     } // end funct
     ) // end then
     .catch(err => 
