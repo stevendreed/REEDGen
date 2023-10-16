@@ -72,14 +72,21 @@ function init()
 {
     inquirer
     .prompt(questions)
-    .then((answers) => 
+    .then(answers => 
     {
-        for (let i = 0; i < answers.length; ++i)
-        {
-            console.log(answers[i]);
-        } // end for
+        // console.log(...answers.value);
+        console.log({...answers});
+        // for (let i = 0; i < answers.length; ++i)
+        // {
+        //     console.log(answers.value);
+        // } // end for
     } // end funct
     ) // end then
+    .catch(err => 
+    {
+        console.log(`ERROR! ${err}`);
+    } // end funct
+    ) // end catch
 } // end init
 
 // Function call to initialize app
