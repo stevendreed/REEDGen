@@ -61,9 +61,9 @@ const questions =
 function writeToFile(fileName, data)
 {
     fs.writeFile(
-        `./output/README.md`,
-        JSON.stringify(data),
-        {encoding: `utf 8`},
+        fileName,
+        data,
+        {encoding: `utf8`},
         err =>
         {
             err ? console.log(err) : console.log(
@@ -80,12 +80,14 @@ function init()
     .then(answers => 
     {
         console.log({...answers});
-        console.log(generateMarkdown(answers));
+        const mdFile = generateMarkdown(answers)
+        console.log(mdFile);
     //     .then(outcome =>
     //         {
     //             console.log(outcome);
     //         } // end =>
     //         ) // end then
+    writeToFile(`./output/README.md`, mdFile);
     } // end funct
     ) // end then
     .catch(err => 
