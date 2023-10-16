@@ -67,7 +67,7 @@ function writeToFile(fileName, data)
         err =>
         {
             err ? console.log(err) : console.log(
-                `Success! See ./output/README.md for file`);
+                `Success! See ${fileName} for file`);
         } // end =>
     ) // end write file
 }
